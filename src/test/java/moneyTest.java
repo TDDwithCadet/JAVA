@@ -5,13 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class moneyTest {
 
     @Test
-    public void testMultiplication() {
-        Dollar five = new Dollar(5);
-        five.times(2);
-        assertEquals(10, five.amount);
-    }
-
-    @Test
     public void testMultiplication3() {
         Dollar five = new Dollar(5);
         assertEquals(new Dollar(10), five.times(2));
@@ -22,7 +15,6 @@ class moneyTest {
     public void testEquality() {
         assertTrue(new Dollar(5).equals(new Dollar(5)));
         assertFalse(new Dollar(5).equals(new Dollar((6))));
-        assertFalse(new Dollar(5).equals(null));
     }
 
 }
