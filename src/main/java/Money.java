@@ -1,5 +1,6 @@
 abstract public class Money {
     protected int amount;
+    abstract String currency();
 
     public boolean equals(Object object) {
         Money money = (Money) object;
